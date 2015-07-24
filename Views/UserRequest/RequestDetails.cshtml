@@ -1,0 +1,39 @@
+﻿@model Models.Request
+
+@{
+    ViewBag.Title = "Request Details";
+}
+<h2></h2>
+<fieldset>
+    <legend>Request Details</legend>
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.DisplayFor(model => model.Start)         
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.Start)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.DisplayFor(model => model.End)         
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.End)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.DisplayFor(model => model.Status)         
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.Status)
+            </div>
+        </div>
+         <div class="form-group">
+            @Html.DisplayFor(model => model.SerialNumber)         
+            <div class="col-md-2">
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </div>
+        </div>
+    </div>    
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

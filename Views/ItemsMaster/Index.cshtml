@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Models.ItemDetails>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Item List</h2>
+
+@*<table class="table">
+   
+
+
+</table>*@
+
+<table class="table-ghadz"
+
+           data-search="true"
+           data-show-refresh="true"
+           data-show-toggle="true"
+           data-show-columns="true"
+           data-show-export="true"
+           data-show-pagination-switch="true"
+           data-pagination="true"
+           data-page-list="[10, 25, 50, 100, ALL]"      
+           data-side-pagination="server"        
+           data-response-handler="responseHandler">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brandName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.typeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>       
+        <td>
+            @Html.DisplayFor(modelItem => item.categoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brandName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.typeName)
+        </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.itemID }) |
+            @Html.ActionLink("Item List", "List", "SingleItem",  new {  id=item.itemID }, null) 
+        </td>
+    </tr>
+}
+</table>
+
+<a href="/ItemsMaster/Create" class="btn btn-success">Add New</a>
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Models.ItemQuantity>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>MasterList</h2>
+
+<table class="table-ghadz"
+    data-search="true"
+    data-show-refresh="true"
+    data-show-toggle="true"
+    data-show-columns="true"
+    data-show-export="true"
+    data-show-pagination-switch="true"
+    data-pagination="true"
+    data-page-list="[10, 25, 50, 100, ALL]"
+    data-side-pagination="server"
+    data-response-handler="responseHandler">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SerialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID })          
+            </td>
+        </tr>
+    }
+
+</table>
+
+@Html.ActionLink("Back to List", "Index", "ItemsMaster")

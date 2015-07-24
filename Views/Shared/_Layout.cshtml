@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TSG Borrowing System </title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/BootstrapTable/extensions/bootstrap-table.css" rel="stylesheet" />
+
+    <!-- Full Calendar CSS s-->
+    <link href="~/BootstrapCalendar/calendar-2.4/fullcalendar.css" rel="stylesheet" />
+    <link href="~/BootstrapCalendar/calendar-2.4/fullcalendar.print.css" rel="stylesheet" media="print" />
+    <link href="~/Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <!--     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <!-- Full Calendar JS -->
+
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+    <script src="~/BootstrapCalendar/calendar-2.4/moment.min.js"></script>
+    <!-- Jquery Core Library -->
+
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/BootstrapTable/bootstrap-table.js"></script>
+    <script src="~/Scripts/bootstrap-datetimepicker.js"></script>
+    <!-- Full Calendar JS -->
+    <script src="~/BootstrapCalendar/calendar-2.4/fullcalendar.min.js"></script>
+    <!-- Full Calendar Snippet -->    
+    <script type="text/javascript">
+        //var events = @ViewBag.CalendarEvents;    
+        $(document).ready(function () {
+            //alert(events);
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                scrollTime: '07:00:00',
+                minTime: '07:00:00',
+                maxTime: '22:01:00',
+                selectable: true,
+                allDaySlot: false,
+                slotDuration: '00:15:00',
+                slotEventOverlap: false,
+                editable: true,
+                eventOverlap: false,
+                eventLimit: true, // allow "more" link when too many events
+                defaultTimedEventDuration: '00:30:00',
+                dayClick: function (date, jsEvent, view) {
+                    changeView(date);
+                    if (view.name == 'agendaDay') {
+                        $('#txtStartTime').val(parseDate(date));
+                        ShowModal();
+                    }
+                }
+            });
+
+            function parseDate(date) {
+
+                var newDate = new Date(date);
+
+                newDate.setHours(newDate.getHours() - 8);
+
+                return newDate.toLocaleDateString() + " " + newDate.toLocaleTimeString();
+            }
+
+            function changeView(date) {
+
+                $('#calendar').fullCalendar('gotoDate', date);
+                $('#calendar').fullCalendar('changeView', 'agendaDay');
+            }
+        });
+    </script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("TSG Borrowing System", "Index", "Login", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    
+                     <ul class="nav navbar-nav">
+                         @if(User.IsInRole("Admin")) {
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
+                             <ul class="dropdown-menu" role="menu">
+                                 <li>@Html.ActionLink("Admin", "Index", "AdminAccount")</li>
+                                 <li>@Html.ActionLink("Borrowers", "Index", "BorrowerAccount")</li>
+                             </ul>
+                         </li>
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Items<span class="caret"></span></a>
+                             <ul class="dropdown-menu" role="menu">
+                                 <li>@Html.ActionLink("Brand", "Brand", "Items")</li>
+                                 <li>@Html.ActionLink("Category", "Category", "Items")</li>
+                                 <li>@Html.ActionLink("Type", "TypeList", "Items")</li>
+                                 <li class="divider"></li>
+                                 <li>@Html.ActionLink("Item List", "Index", "ItemsMaster")</li>
+                             </ul>
+                         </li>
+                         }
+                         @if(User.IsInRole("Dean") || User.IsInRole("DSA"))  {                      
+                         <li>@Html.ActionLink("Request Item", "AvailableItems", "UserRequest")</li>
+                         }                         
+                         <li>@Html.ActionLink("Pending Request", "Index", "Approval")</li>
+                     </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome,&nbsp;@User.Identity.Name
+                                <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Settings", "Logout", "Account")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+                        </ul>
+                    </li>
+                </ul>
+                }
+                else
+                {
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                    </ul>
+                }
+
+            </div>
+        </div>
+    </div>
+   
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Ghadaffi</p>
+        </footer>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.table-ghadz').bootstrapTable();
+        });
+    </script>
+</body>
+</html>

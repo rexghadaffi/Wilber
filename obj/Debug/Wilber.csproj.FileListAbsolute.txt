@@ -1,0 +1,57 @@
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\obj\Debug\Wilber.csprojResolveAssemblyReference.cache
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Wilber.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Wilber.pdb
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Antlr3.Runtime.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Microsoft.Web.Infrastructure.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Models.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\MySql.Data.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\MySql.Web.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Newtonsoft.Json.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Repository.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Net.Http.Formatting.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Helpers.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Http.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Http.WebHost.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Mvc.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Optimization.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Razor.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.WebPages.Deployment.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.WebPages.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.WebPages.Razor.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\WebActivatorEx.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\WebGrease.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Repository.pdb
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Antlr3.Runtime.pdb
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Models.pdb
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Optimization.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\Newtonsoft.Json.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Net.Http.Formatting.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Helpers.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Http.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Http.WebHost.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Mvc.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.Razor.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.WebPages.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.WebPages.Deployment.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\bin\System.Web.WebPages.Razor.xml
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\obj\Debug\Wilber.dll
+c:\users\wilber\documents\visual studio 2012\Projects\Babawokie\Wilber\obj\Debug\Wilber.pdb
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\obj\Debug\Wilber.csprojResolveAssemblyReference.cache
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\obj\Debug\Wilber.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\obj\Debug\Wilber.pdb
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Wilber.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Wilber.pdb
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Models.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Newtonsoft.Json.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Repository.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Net.Http.Formatting.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Web.Http.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Web.Http.WebHost.dll
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Models.pdb
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Repository.pdb
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\Antlr3.Runtime.pdb
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Web.Optimization.xml
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Net.Http.Formatting.xml
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Web.Http.xml
+C:\Users\i-jcadiao\Documents\Babawokie\hey\Babawokie\Wilber\bin\System.Web.Http.WebHost.xml
